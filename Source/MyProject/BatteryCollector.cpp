@@ -92,7 +92,6 @@ void ABatteryCollector::OnBeginOverlap(UPrimitiveComponent* HitComp, AActor* Oth
 	{
 		Power += 10.0f;
 		Power = FMath::Clamp(Power, 0.0f, 100.0f);
-		OtherActor->Destroy();
 	}
 }
 
